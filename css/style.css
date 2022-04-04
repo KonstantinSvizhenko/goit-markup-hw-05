@@ -87,6 +87,9 @@ span {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition: var(--main-hover-color);
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-link.current::after {
@@ -104,6 +107,7 @@ bottom: -32.3px;
 .nav-list-link:hover,
 :focus {
   color: var(--main-hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-container {
@@ -134,10 +138,14 @@ bottom: -32.3px;
   letter-spacing: 0.02em;
 
   color: var(--main-text-color);
+  transition: var(--main-hover-color);
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts:hover,
 :focus {
   color: var(--main-hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item {
@@ -171,6 +179,7 @@ bottom: -32.3px;
 .header-contacts:not(:last-child) {
   margin-right: 50px;
 }
+
 
 /*  Hero  */
 
@@ -216,16 +225,21 @@ bottom: -32.3px;
   font-size: 16px;
   line-height: 1.88;
   color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
+
 .hero-button:hover {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* advantages */
 .advantages {
@@ -393,11 +407,13 @@ bottom: -32.3px;
   background-color: transparent;
   border-radius: 50%;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
   background: var(--main-hover-color);
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-customers {
@@ -435,6 +451,7 @@ bottom: -32.3px;
  .customers-link {
    width: 170px;
    height: 92px;
+   
  }
 
 .customers-link:not(:last-child) {
@@ -443,13 +460,19 @@ bottom: -32.3px;
 
 .customers-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon:focus,
 .customers-icon:hover {
   fill: var(--main-hover-color);
   border: 1px solid var(--main-hover-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}  
   
-}
+
+
 
 
 
@@ -500,12 +523,13 @@ color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: #FFFFFF;
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contats-us-link:hover,
 .contats-us-link:focus {
   background-color: var(--main-hover-color);
   fill: #FFFFFF;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contats-us-item:not(:last-child) {
@@ -558,6 +582,7 @@ color: #FFFFFF;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -577,10 +602,11 @@ color: #FFFFFF;
 }
 .footer-contacts:focus {
   color: var(--main-hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts:hover {
   color: var(--main-hover-color);
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 footer {
   background-color: var(--secondary-background-color);
@@ -613,6 +639,8 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-nav:not(:last-child) {
@@ -623,11 +651,15 @@ footer {
   background: var(--main-hover-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-nav-list:focus {
   background: var(--main-hover-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-img-list {
   width: 370px;
