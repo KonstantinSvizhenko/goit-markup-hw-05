@@ -59,7 +59,7 @@
      <main>                      
     <section class="hero">
         <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
         
     </section>
                             <!--Advantages-->
@@ -119,24 +119,26 @@
         <div class="container"> 
             <h2 class="specialization-name">Чем мы занимаемся</h2>
         <ul class="specialization-art">
+            <div class="item-monoblock">
             <li class="specialization-list">
-                <div class="item-monoblock">
+                
                 <img src="./images/img.jpg" alt="вводит код на клавиатуре" width="370" height="294">
             <p class="monoblock-text">Десктопные приложения</p>    
-            </div>      
-            </li>
+               </li>
+               </div>
             <div class="item-monoblock">
             <li class="specialization-list">
                 <img src="./images/img1.jpg" alt="синхронизирует с телефоном" width="370" height="294"> 
             <p class="monoblock-text">Мобильные приложения</p>
-            </div>
-            </li>  
+        </li>
+        </div>
+             
             <div class="item-monoblock">
             <li class="specialization-list">
                 <img src="./images/img2.jpg" alt="стилизирует на планшете" width="370" height="294">
             <p class="monoblock-text">Дизайнерские решения</p>
-            </div>
             </li>
+            </div>
         </ul>
         </div>
     </section>
@@ -491,6 +493,18 @@
          </div>
     
         
-    </footer>      
+    </footer>    
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    
 </body>
 </html>       
